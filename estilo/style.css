@@ -47,8 +47,7 @@ header{
     
 }
 
-
-header > h1 {
+header  h1 {
     font-family: var(--fontedestaque) ;
     margin-bottom: 20px;
     font-size: 3em;
@@ -62,6 +61,51 @@ header > p {
     font-size:1.2em;
     max-width: 500px; min-width: 300px;
     margin: auto;
+}
+.botao {
+    
+    justify-content: center;
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+}
+.botao .ham {
+    cursor: pointer;
+}
+.botao .ham div {
+    width: 30px;
+    height:4px; 
+    background-color: white;
+    
+    border-radius: 10px;
+    margin:auto;
+    
+ 
+    margin-top: 3px;
+    margin-bottom: 5px;
+    
+    
+}
+.botao .ham div.p1{
+    width:50px;
+}
+
+.botao .ham div.p2{
+    width: 40px;
+}
+
+#menu-oculto{
+    display: none;
+    flex-direction: column;
+    width:100%;
+    height: 20vh;
+  
+}
+#menu-oculto a {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
 }
 nav{
     padding: 10px;
@@ -210,8 +254,11 @@ a.externo::after{
 @media (max-width: 500px) {
     nav {
         
-        display:grid; 
-        place-items: center;
+        display:none;
+       
         
+    }
+    .botao{
+        display: flex;
     }
 }
